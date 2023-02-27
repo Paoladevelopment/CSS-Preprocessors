@@ -82,7 +82,7 @@ button {
 }
 
 .hero {
-  background-image: url("../../assets/background-image-1.jpg");
+  background-image: url("../assets/background-image-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top right;
@@ -320,7 +320,7 @@ button {
 }
 
 .learn-more {
-  background-image: url("../../assets/background-image-2.jpg");
+  background-image: url("../assets/background-image-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

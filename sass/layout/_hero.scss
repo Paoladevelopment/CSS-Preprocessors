@@ -1,5 +1,5 @@
 .hero {
-  @include background-img("../../assets/background-image-1.jpg");
+  @include background-img("../assets/background-image-1.jpg");
   position: relative;
 
   &__animated-pic1 {
