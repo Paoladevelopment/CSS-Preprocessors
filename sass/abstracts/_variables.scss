@@ -1,0 +1,26 @@
+// color variables that are used
+
+$light-gray: #e5e5e5;
+$dark-gray: #464547;
+$translucent-brown: rgba(140, 79, 42, 0.3);
+$background-colors: $light-gray $dark-gray $translucent-brown;
+
+$white: #ffffff;
+$cyan: #39c2d7;
+
+$font-gray-color: rgba(255, 255, 255, 0.7);
+$font-gray-opacity-4: rgba(255, 255, 255, 0.4);
+$font-dark-gray: #464547;
+$font-light-gray: #666666;
+
+$btn-main-color: #55c2d8;
+// fonts that are used
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+$main-font: "Oswald";
+$secundary-font: "Source Sans Pro";
+
+// weight of the font
+$fw-normal: 400;
+$fw-bold: 700;

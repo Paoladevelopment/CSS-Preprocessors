@@ -1,0 +1,40 @@
+.btn {
+  &--read-more {
+    @include button-personalized(7.18rem, 2.375rem, $btn-main-color, 18px);
+    cursor: pointer;
+
+    font-family: $main-font;
+    font-size: 0.875rem;
+    font-weight: $fw-normal;
+    line-height: 1.625rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $white;
+
+    margin-bottom: 7.25rem;
+    padding: 0.33rem 0 0.39rem;
+
+    transition: transform 1s;
+
+    &:hover {
+      transform-origin: left;
+      transform: rotateZ(10deg);
+    }
+  }
+
+  &--play-btn {
+    @include button-personalized(6.25rem, 6.25rem, $cyan, 50%);
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: $white;
+    padding: 1.5rem 2rem 1.5rem 2.5rem;
+    margin-bottom: 5.125rem;
+    transition: all 1.5s;
+
+    &:hover {
+      color: $cyan;
+      background-color: $white;
+      transform: scale(0.9);
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@mixin background-img($url, $size: cover, $img-position: top right) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: $size;
+  background-position: $img-position;
+}
+
+//mixins for media queries
+@mixin break($length) {
+  @media (min-width: $length) {
+    @content;
+  }
+}
+
+//mixins for a flexible layout
+//it is organized this way because it is least common to change the direction and the default value for wrapping.
+@mixin flexible(
+  $just: flex-start,
+  $gap: 0,
+  $align: stretch,
+  $direction: row,
+  $wrap: nowrap
+) {
+  display: flex;
+  flex-flow: $direction $wrap;
+  justify-content: $just;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin flexible-item(
+  $align: normal,
+  $order: 0,
+  $grow: 0,
+  $shrink: 1,
+  $basis: auto
+) {
+  order: $order;
+  flex: $grow $shrink $basis;
+  align-self: $align;
+}
+
+//the shape of a button
+@mixin button-personalized($width, $height, $background, $radius) {
+  width: $width;
+  height: $height;
+  border-radius: $radius;
+  background: $background;
+}
